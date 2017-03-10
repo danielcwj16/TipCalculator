@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        billField.becomeFirstResponder()
         print("I can't wait to pusht this project to github!")
     }
 
@@ -31,6 +32,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func calculateTip(_ sender: AnyObject) {
+
         let tipPercentages = [0.18,0.2,0.25]
         
         let bill = Double(billField.text!) ?? 0
@@ -39,6 +41,11 @@ class ViewController: UIViewController {
         
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+        ///formatBill(bill:bill)
+    }
+    
+    func formatBill(bill:Double){
+        billField.text = String(format: "$%.2f", bill)
     }
 }
 
