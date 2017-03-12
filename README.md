@@ -21,7 +21,8 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+* [X] Remembering the tip percentage across app restarts.
+* [X] Theming the Main application page and Setting page
 
 ## Video Walkthrough 
 
