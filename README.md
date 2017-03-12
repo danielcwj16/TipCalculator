@@ -28,7 +28,10 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/danielcwj16/TipCalculator/blob/master/tip.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/danielcwj16/TipCalculator/blob/master/tipit_1.gif' title='Video Walkthrough' width='250' height='450' alt='Video Walkthrough' />
+<img src='https://github.com/danielcwj16/TipCalculator/blob/master/tipit_2.gif' title='Video Walkthrough' width='250' height='450' alt='Video Walkthrough' />
+<img src='https://github.com/danielcwj16/TipCalculator/blob/master/tipit_3.gif' title='Video Walkthrough' width='250' height='450' alt='Video Walkthrough' />
+
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
