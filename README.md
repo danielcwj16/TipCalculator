@@ -4,7 +4,7 @@
 
 Submitted by: **Weijie Chen**
 
-Time spent: **0.5** hours spent in total
+Time spent: **5** hours spent in total
 
 ## User Stories
 
@@ -16,12 +16,13 @@ The following **required** functionality is complete:
 The following **optional** features are implemented:
 * [X] UI animations
 * [X] Remembering the bill amount across app restarts (if <10mins)
-* [ ] Using locale-specific currency and currency thousands separators.
+* [X] Using locale-specific currency and currency thousands separators.
 * [X] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+* [X] Remembering the tip percentage across app restarts.
+* [X] Theming the Main application page and Setting page
 
 ## Video Walkthrough 
 
