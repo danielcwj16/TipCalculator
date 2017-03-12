@@ -14,6 +14,60 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    @IBOutlet weak var resultView: UIView!
+    
+    func updateViewWithAnimation(animated:Bool) {
+        let billamount = Double(billField.text!)
+        if(billamount == 0 || billamount == nil){
+            showInputOnlyWithAnimation(animated:animated)
+        }
+        else{
+            showResultViewWithAnimation(animated:animated)
+        }
+    }
+    
+    func showResultViewWithAnimation(animated:Bool) {
+        if(animated){
+            UIView.animate(withDuration: 0.5, animations: {
+                self.showResultView()
+            }, completion: nil
+            )
+        }else{
+        self.showResultView()
+        }
+    }
+    
+    func showInputOnlyWithAnimation(animated:Bool){
+        if(animated){
+            UIView.animate(withDuration: 0.5, animations: {
+                self.showInputView()
+            }, completion: nil)
+        }else{
+            self.showInputView()
+        }
+    }
+    
+    func showInputView(){
+        var resultFrame = resultView.frame
+        
+        resultFrame.origin.y = 454
+        resultView.frame = resultFrame
+        
+        var billamountframe = billField.frame
+        billamountframe.origin.y = 186
+        billField.frame = billamountframe
+    }
+    
+    func showResultView() {
+        var resultFrame = resultView.frame
+        
+        resultFrame.origin.y = 190
+        resultView.frame = resultFrame
+        
+        var billamountframe = billField.frame
+        billamountframe.origin.y = 70
+        billField.frame = billamountframe
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +100,8 @@ class ViewController: UIViewController {
     @IBAction func calculateTip(_ sender: AnyObject) {
 
         updateValues()
+        
+        updateViewWithAnimation(animated: true)
         ///formatBill(bill:bill)
     }
     func updateValues(){
