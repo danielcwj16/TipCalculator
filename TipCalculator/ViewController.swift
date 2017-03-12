@@ -61,11 +61,11 @@ class ViewController: UIViewController {
     func showResultView() {
         var resultFrame = resultView.frame
         
-        resultFrame.origin.y = 190
+        resultFrame.origin.y = 250
         resultView.frame = resultFrame
         
         var billamountframe = billField.frame
-        billamountframe.origin.y = 70
+        billamountframe.origin.y = 110
         billField.frame = billamountframe
     }
     
